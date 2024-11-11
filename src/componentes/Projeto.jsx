@@ -1,11 +1,11 @@
 function Projeto(props) {
     return (
         <li data-aos="fade-up" data-aos-delay={props.delay} className="w-full">
-            <div className="  relative rounded-lg overflow-hidden aspect-[4/3]">
+            <div className="relative ">
                 <img
                     src={props.imagem}
                     alt="Imagem do projeto"
-                    className="h-full "
+                    className="aspect-[4/3] rounded-lg"
                     title="Imagem do projeto"
                 />
                 <div className="lg:opacity-0 lg:hover:opacity-100 duration-300 ease-linear  lg:absolute top-0 w-full h-full lg:bg-theme-bg-900-opacity flex lg:flex-col justify-evenly lg:justify-center items-center sm:text-xl text-lg">
