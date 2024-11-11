@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --main-color: #23b5d3;
+    --bg-900: #ffffff; /* Fundo claro */
+    --bg-500: #d4d6db; /* Fundo claro */
+    --text-primary: #000000; /* Texto escuro */
+    --text-secundary: #2b2c2c; /* Texto escuro */
+    --texto-animacao: #000000;
+    --bg-900-opacity: #060c0cde;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark {
+    --main-color: #23b5d3;
+    --bg-900: #071013;
+    --bg-500: #14171e;
+    --text-primary: #ffffff;
+    --text-secundary: #b1b6b7;
+    --texto-animacao: #ffffff;
+    /* color:  rgb(rgb(22, 9, 9)); */
+}
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    background-color: transparent; /* Cor do fundo da barra */
+}
+
+/* Estilo do "polegar" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: var(
+        --main-color
+    ); /* Cor do polegar da barra de rolagem */
+    border-radius: 6px; /* Arredondamento das bordas */
+}
+
+/* Estilo do "polegar" quando está em foco ou ativo */
+/* ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--bg-900); /* Cor quando o polegar está em foco 
+} */
+
+/* Estilo do "trilho" da barra de rolagem (área de fundo) */
+::-webkit-scrollbar-track {
+    background-color: #ffffff; /* Cor do trilho */
+    border-radius: 6px;
 }
