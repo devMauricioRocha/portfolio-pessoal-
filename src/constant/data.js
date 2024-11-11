@@ -101,7 +101,7 @@ export const contatos = {
     celular: {
         nome: "Celular",
         contato: "(21)99184-9864",
-        link: "https://api.whatsapp.com/send?phone=551299166-7478&text=Ol%C3%A1%20gostaria%20de%20falar%20com%20voc%C3%AA%20sobre%20negocios",
+        link: "https://api.whatsapp.com/send?phone=552199184-9864&text=Ol%C3%A1%20gostaria%20de%20falar%20com%20voc%C3%AA%20sobre%20negocios",
         icon: MdPhoneInTalk,
     },
     linkedin: {
